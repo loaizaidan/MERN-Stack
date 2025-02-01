@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #4f4f4f;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .form {
+    margin-bottom: 20px;
+  }
+  
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .color-box {
+    margin: 10px;
+    border: 1px solid #000;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
