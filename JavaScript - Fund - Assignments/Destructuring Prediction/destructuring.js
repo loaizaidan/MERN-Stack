@@ -14,7 +14,7 @@ const employee = {
     company: 'Tesla'
 };
 const { name: otherName } = employee;
-// console.log(name); error: 'name' is not defined
+// console.log(name); error
 console.log(otherName); // 'Elon'
 
 console.log("\n")
@@ -38,8 +38,8 @@ const [, first] = numbers;
 const [, , , second] = numbers;
 const [, , , , , , , , third] = numbers;
 
-console.log(first == second); // false, because 'first' is 2 and 'second' is 5
-console.log(first == third); // false, because 'first' is 2 and 'third' is 2 but this checks by object reference
+console.log(first == second); // false
+console.log(first == third); // false
 
 console.log("\n")
 
@@ -52,7 +52,7 @@ const { key } = lastTest;
 const { secondKey } = lastTest;
 const [, willThisWork] = secondKey;
 
-console.log(key); // 'value', because it's destructured from the 'lastTest' object
-console.log(secondKey); // [1, 5, 1, 8, 3, 3], the array is destructured from 'lastTest'
-console.log(secondKey[0]); // 1, first item in the array
-console.log(willThisWork); // 5, second item in the array
+console.log(key); // 'value'
+console.log(secondKey); // [1, 5, 1, 8, 3, 3]
+console.log(secondKey[0]); // 1
+console.log(willThisWork); // 5
